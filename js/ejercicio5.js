@@ -11,15 +11,17 @@ let texto;
 let miFuncion =texto=>{
     let texto2=[];
     let texto3='';
-    let i=1,j=1;
+    let i=1;
+
     if(!texto) return console.warn("No se ingreso texto en la función");
+
     for(const caracter of texto){
         texto2[texto.length-i]=caracter;
         i++;
     }
-    for(const caracter of texto2){
-        texto3+=caracter;
-    }
+
+    for(const caracter of texto2) texto3+=caracter;
+    
     console.log(texto3);
 }
 //Ejecución de código
